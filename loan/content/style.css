@@ -1,0 +1,43 @@
+/* styling fir graph image */
+
+img {
+    width: 58%;
+    height: 300px;
+    margin-left: -60px
+}
+
+
+/* class for inputs with rounded borders; */
+
+.rounded {
+    border-radius: 2px;
+    border: 1px solid #c1c1c1;
+}
+
+
+/* boder-radius for calculate button */
+
+.submit {
+    border-radius: 2px;
+}
+
+.none {
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.sponsor {
+    text-align: center;
+}
+
+#sponsor {
+    margin-top: 30px;
+}
+
+.loan {
+    margin-left: 15px;
+}
+
+.loans {
+    width: 50%;
+}

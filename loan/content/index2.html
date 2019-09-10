@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOAN CALCULATOR</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 1 left empty column -->
+            <div class="col-md-1"></div><br><br>
+
+            <!-- middle containing labels and inputs -->
+            <div class="col-md-4">
+                <form action="#" id="myForm" method="">
+
+                    <p class="loan"><b>Enter Loan Data:</b></p>
+                    <table>
+
+
+                        <tr>
+                            <td>Amount of the loan($):</td>
+                            <th>
+                                <label for="amount"></label>
+                                <input id="amount_loan" class="rounded" type="number" name="amount"><br>
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td>Annual interest(%):</td>
+                            <th>
+                                <label for="interest"></label>
+                                <input id="annual_interest" class="rounded" type="number" name="interest">
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>Repayment period(years):</td>
+                            <th>
+                                <label for="repayment"></label>
+                                <input id="repayment_period" class="rounded fom-controlr" f type="number" name="repayment">
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td>Zipcode(to find lenders):</td>
+                            <th>
+                                <label for="zipcode"></label>
+                                <input id="zipcod" class="rounded is-invalid" type="number" name="zipcode">
+                                <div id="promt" style="color: red; font-size: 13px; font-family: 'Courier New', Courier, monospace"></div>
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <th>Approximate Payments:</th>
+                            <th>
+                                <label for="approximation"></label>
+                                <input class="submit" type="submit" value="Calculate" id="approximation">
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td>Monthly payment:</td>
+                            <th>
+                                <label for="Monthly_payment"></label>
+                                <input id="monthpayment" class="none" type="number/text" name="Monthly_payment" disabled>
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td>Total payment:</td>
+                            <th>
+                                <label for="total_payment"></label>
+                                <input id="totalPayment" class="none" type="number/text" name="total_payment" disabled></th>
+                        </tr>
+
+
+                        <tr>
+                            <td>Total Interest:</td>
+                            <th>
+                                <label for="total_interest"></label>
+                                <input id="totalInterest" class="none" type="number/text" name="total_interest" disabled></th>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+            <!-- last column of 7 columns-->
+            <div class="col-md-7">
+                <p style="margin-left: -60px"><b>Loan Balance, Cumulative Equity, and Interest Payments</b></p>
+                <img src="loans.png" alt="Graph">
+            </div>
+        </div>
+
+        <!-- lower divs for sponsor and applying-->
+        <div class="row" id="sponsor">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 sponsor"><b>Sponsors:</b></div>
+            <div class="col-md-5 ">
+                <p>Apply for your loan with one of these fine lenders:</p>
+            </div>
+        </div>
+
+        <!-- div for downer links -->
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">Bank of Javascript</a></li>
+                    <li><a href="#">HTML Credit Union</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <!-- link for js -->
+    <script src="validation.js" type="text/javascript">
+    </script>
+</body>
+
+</html>
