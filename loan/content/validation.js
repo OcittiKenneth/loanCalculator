@@ -20,7 +20,7 @@ function myFunction(e) {
 
     // computing monthly payment
     const ken = Math.pow(1 + calculatedInterest, calculatedPayment);
-    const monthly = (principle * ken * calculatedInterest) / (ken - 1)
+    const monthly = (principle * ken * calculatedInterest) / (ken - 1);
 
     // zipcode specification
     const zipcode = document.getElementById("zipcod");
@@ -38,8 +38,6 @@ function myFunction(e) {
         monthlyPayment.value = `$${monthly.toFixed(2)}`;
         totalPayment.value = `$${((monthly * calculatedPayment).toFixed(2))}`;
         totalInterest.value = `$${((monthly * calculatedPayment) - principle).toFixed(2)}`;
-    } else {
-
     }
 
     e.preventDefault();
