@@ -1,3 +1,5 @@
+// A function for calculation with event handler submit
+
 document.getElementById("myForm").addEventListener("submit", myFunction);
 
 function myFunction(e) {
@@ -39,13 +41,6 @@ function myFunction(e) {
     } else {
 
     }
-    // setTimeout(function() {
-    //     document.getElementById("promt").remove();
-    // }, 3000);
-    // setTimeout(() => {
-    //     document.getElementById("promt").remove();
-
-    // }, 1000);
 
     e.preventDefault();
 };
